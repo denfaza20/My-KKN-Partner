@@ -56,7 +56,7 @@
 </head>
 <body>
   <div class="container" id="loginBox">
-    <h2>Hi everyone, it's me Faza</h2>
+    <h2>Hi everyone, it's me</h2>
     <h3> Silahkan Login dulu yaaaakkk</h3>
     <input type="text" id="usernameInput" placeholder="Masukkan username (nama)">
     <input type="password" id="passwordInput" placeholder="Masukkan password">
@@ -69,8 +69,8 @@
     <h2>Hai, <span id="userName"></span>!</h2>
     <p class="message" id="userMessage"></p>
     <p class="apology">
-      For everyone,,, I'm sorry because I'm not a fun / exciting person, and I realize I'm not very influential in this group. <br>
-      And I also broke the rule that is WORK, I still work even though I'm in this KKN, I'm sorry. <br>
+      For everyone,,, I'm sorry because I'm not a fun / exciting person, and I realize I'm not very influential in this group, i didn't give any contributions  <br>
+      And I also broke the rule that is WORK, I still work even though I'm in this KKN, but i worked when there was no activity, I'm sorry. <br>
       And thank you for accepting me 🙏
     </p>
     <button onclick="logout()">Keluar</button>
@@ -79,13 +79,13 @@
   <script>
     const users = {
       "Arif": { password: "arif123", message: "Arif, I want to say thank you so much for your leadership in this KKN. Honestly, KKN would be so different without you, who is always easy-going and can lighten the mood. It's really cool that you can calm every situation and make us all feel comfortable. I learned a lot from you about the meaning of patience and how to stay calm when facing problems. Don't ever change, okay? May all your dreams come true and you always be an inspiration to the people around you. Cheers!" },
-      "Nabila": { password: "nabila123", message: "Nabila, the most exciting partner of the vice chair! Thank you so much for being an amazing friend during KKN. You were like a mood booster for all of us. There were always things to talk about and jokes that made the tense atmosphere become relaxed. I'm sure, with your intelligence in communicating and super joke skills, you will be successful wherever you are. Don't forget that we have many funny memories together.stay safe and healthy yaakkk" },
+      "Nabila": { password: "nabila123", message: "Nabila, the most exciting partner of the vice chair! Thank you so much for being an amazing friend during KKN. You were like a mood booster for all of us. There were always things to talk about and jokes that made the tense atmosphere become relaxed. I'm sure, with your intelligence in communicating and super joke skills, you will be successful wherever you are. Don't forget that we have many funny memories together.stay safe and healthy yaakkk, cheers!!!" },
       "Dian": { password: "dian123", message: "To Dian, the most diligent secretary partner! Damn, this KKN wouldn't be this neat without you. Your perfectionist spirit and cleanliness amaze me. Even though sometimes you act really funny, you still make me smile. Thank you for being an amazing work partner. And... please don't touch the cat when I'm around! Hehe. I wish you continued success!" },
-      "Nurul": { password: "nurulbaik", message: "Nurul, my best friend! Thank you for being a friend who is always there when I'm stressed with work. You're like an alarm clock for me, reminding me to be enthusiastic again. I also won't forget, every time you sweet-talk me, I can only smile. That's one of the funniest moments I remember most in this KKN.absolutely thankyou for talking with me and listening to me, sorry if i'm indifferent, I hope our friendship doesn't just end here. See you again!" },
+      "Nurul": { password: "nurulbaik", message: "Nurul, my best friend! Thank you for being a friend who is always there when I'm stressed with work. You're like an alarm clock for me, reminding me to be enthusiastic again. I also won't forget, every time you sweet-talk me, I can only smile. That's one of the funniest moments I remember most in this KKN. absolutely thankyou for talking with me and listening to me, sorry if i'm indifferent, terimakasih sudah sering ngajak ngobrol dan peduli juga heheh sorry, I hope our friendship doesn't just end here. See you again!" },
       "Meisya": { password: "meisya123", message: "Meisya, i dunno exacly you recognize me or not i dont think so. I hope you continue to be successful! i dunno what i should type here because i did not talk/interact with u sorry just forget/ignore me hahahah,just it, stay safe and healty" },
-      "Putri": { password: "putri123", message: "Putri pret pret suaranya (maksudnya cempreng) hehehe, thank you for being one of the reasons why this KKN is so much fun! I admire you for being honest and open, without any shame whatsoever. All your stories and funny antics make the atmosphere so relaxed. Even though sometimes we get confused when you don't understand Javanese, it actually becomes a funny moment in itself. I wish you success with all your honesty and humor, okay! See you again!Please take care of your social interactions with your friends, okay? and the last for you pytri, TAUBAAATTTT!!! WKWKWKWKW" },
-      "Putra": { password: "putra123", message: "Putra, thank you so much for being an amazing friend during KKN. You can share regional languages, that's what makes me proud of you. You're a complete package. If it weren't for you, maybe we would just eat instant noodles every day. I admire your diligent spirit and multi-talent, from the hardest to the most trivial, you do everything well. But remember, don't sleep too long, you'll oversleep! Good luck, and don't forget to cook for me again!" },
-      "Mahtum": { password: "mahtum123", message: "Mahtum MD Si jamet Madura, the most fun friend, paling absurd tingkah dan omongan nya kocak pokonya! Thank you for making this KKN so full of laughter. There are always your antics that make me laugh until my stomach hurts. I will really miss your crisp laugh and the soothing sound of the call to prayer, especially when accompanied by your cool beatbox. May you continue to be successful with all your creativity!" },
+      "Putri": { password: "putri123", message: "Putri pret pret suaranya (maksudnya cempreng) hehehe, thank you for being one of the reasons why this KKN is so much fun! I admire you for being honest and open, without any shame whatsoever. All your stories and funny antics make the atmosphere so relaxed. Even though sometimes we get confused when you don't understand Javanese, it actually becomes a funny moment in itself. I wish you success with all your honesty and humor, okay! See you again! Tolong jaga pergaulanmu dengan teman-temanmu, oke? and the last for you pytri, TAUBAAATTTT!!! WKWKWKWKW" },
+      "Putra": { password: "putra123", message: "Putra, thank you so much for being an amazing chef during KKN. You can share regional languages, that's what makes me proud of you. You're a complete package. If it weren't for you, maybe we would just eat instant noodles every day. I admire your diligent spirit and multi-talent, from the hardest to the most trivial, you do everything well. But remember, don't sleep too long, you'll oversleep! Good luck, and don't forget to cook for me again!" },
+      "Mahtum": { password: "mahtum123", message: "Mahtum MD Si jamet Madura, the most fun friend, paling absurd tingkah dan omongan nya kocak pokonya! Thank you for making this KKN so full of laughter. Selalu ada omonganmu yang bikin aku ngakak sampai perutku sakit. Aku suka banget sama tawa renyahmu dan suara azan yang merdu, apalagi kalau diiringi beatbox-mu yang keren. May you continue to be successful with all your creativity!" },
       "Una": { password: "una123", message: "Una, my friendliest KKN friend, suaranya paling cempreng wkwkwkw! I want to thank you for making the atmosphere lively. Every funny story you share makes us laugh continuously. But I will also never forget, you are also the person who cries the easiest. For some reason, that actually makes you unique. May you continue to be successful with all your kindness and cheerfulness!" },
       "Haris": { password: "haris123", message: "Haris, thank you so much. I know you're the busiest guy during this KKN, from morning till night always focused on editing and taking pictures. But strangely, in the midst of all that busyness, you're still the funniest and most mature when talked to. You prove that hard work and humor can go hand in hand. I wish you success with all your talents. aku tau hidupmu penuh dengan deadline project ingat!!! berajin-rajinlah dahulu bermalas-malas kemudian! that's what i do in my work hahahah" }
     };
@@ -113,6 +113,7 @@
   </script>
 </body>
 </html>
+
 
 
 
